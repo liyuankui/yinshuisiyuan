@@ -6,7 +6,7 @@
 <title>饮水思源 | 运动饮料配料真相——喝对不喝贵</title>
 <meta name="description" content="打完球该喝哪瓶？9 款中国市场运动饮料红绿灯榜＋整瓶糖量可视化＋场景推荐器——喝一杯水，想想里面装了什么。">
 <meta property="og:title" content="饮水思源 · 运动饮料配料真相">
-<meta property="og:description" content="一瓶佳得乐=36g糖（超WHO全天上限）。打完球该喝哪瓶？红绿灯榜+场景推荐。">
+<meta property="og:description" content="一瓶佳得乐=36g糖（超WHO条件性上限25g）。打完球该喝哪瓶？红绿灯榜+场景推荐。">
 <meta property="og:image" content="https://liyuankui.github.io/yinshuisiyuan/og-cover.png">
 <meta property="og:url" content="https://liyuankui.github.io/yinshuisiyuan/">
 <meta name="twitter:card" content="summary_large_image">
@@ -450,8 +450,8 @@ footer.site a{color:#9fc3e8}
 <script>
 // ── sugar bars ────────────────────────────────
 const SUGAR_DATA = [
-  { name: '东鹏补水啦', g: 34.4 },
   { name: '佳得乐', g: 36 },
+  { name: '东鹏补水啦', g: 34.4 },
   { name: '宝矿力', g: 31 },
   { name: '脉动', g: 29.4 },
   { name: '农夫山泉', g: 24.8 },
@@ -470,7 +470,7 @@ SUGAR_DATA.forEach(d => {
 });
 
 // ── share ─────────────────────────────────────
-const SHARE_TXT = '饮水思源｜打完球该喝哪瓶？9款运动饮料红绿灯榜——一瓶东鹏=34.4g糖（超WHO条件性上限25g）。糖是钠的搬运工，0糖不一定对。场景推荐+运动日补给时间线 https://liyuankui.github.io/yinshuisiyuan/';
+const SHARE_TXT = '饮水思源｜打完球该喝哪瓶？9款运动饮料红绿灯榜——一瓶佳得乐=36g糖（超WHO条件性上限25g）。糖是钠的搬运工，0糖不一定对。场景推荐+运动日补给时间线 https://liyuankui.github.io/yinshuisiyuan/';
 document.getElementById('shareBtn').onclick = async () => {
   try { await navigator.clipboard.writeText(SHARE_TXT); } catch (e) {}
   const b = document.getElementById('shareBtn'); b.textContent = '✓ 已复制';
